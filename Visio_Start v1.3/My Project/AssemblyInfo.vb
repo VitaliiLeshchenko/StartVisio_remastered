@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Проверьте значения атрибутов сборки
 
-<Assembly: AssemblyTitle("Visio_Start v1.3")> 
+<Assembly: AssemblyTitle("StartVisio")>
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("Visio_Start v1.3")> 
+<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyProduct("StartVisio")>
 <Assembly: AssemblyCopyright("Copyright ©  DL 2020")> 
 <Assembly: AssemblyTrademark("")> 
 

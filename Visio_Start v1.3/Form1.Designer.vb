@@ -1390,7 +1390,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox6)
         Me.Name = "Form1"
-        Me.Text = "Visio_Start v1.3"
+        Me.Text = "StartVisio"
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
