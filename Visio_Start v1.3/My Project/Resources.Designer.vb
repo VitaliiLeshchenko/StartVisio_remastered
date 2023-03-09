@@ -39,7 +39,7 @@ Namespace My.Resources
         Friend ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
             Get
                 If Object.ReferenceEquals(resourceMan, Nothing) Then
-                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Visio_Start_v1._3.Resources", GetType(Resources).Assembly)
+                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("StartVisio.Resources", GetType(Resources).Assembly)
                     resourceMan = temp
                 End If
                 Return resourceMan
@@ -58,6 +58,327 @@ Namespace My.Resources
             Set
                 resourceCulture = value
             End Set
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Provider=OraOLEDB.Oracle.1;User ID=gnatyk;Password=gnatyk;Data Source=WMOS_PROD;Persist Security Info=False.
+        '''</summary>
+        Friend ReadOnly Property db_property() As String
+            Get
+                Return ResourceManager.GetString("db_property", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Logo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Logo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property LogoLittle() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("LogoLittle", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT day2,
+        '''       dep,
+        '''       SUM(not_lotok) not_lotok,
+        '''       SUM(lotok) lotok,
+        '''       SUM(otobr_upak) otobr_upak,
+        '''       SUM(otobr_not_upak) otobr_not_upak,
+        '''       SUM(not_lotok) + SUM(lotok) + SUM(otobr_upak) + SUM(otobr_not_upak) vsego,
+        '''       prosr
+        '''  FROM (SELECT day1,
+        '''               day2,
+        '''               dep,
+        '''               lot,
+        '''               COUNT(locn) strok,
+        '''               SUM(qty) qty,
+        '''               SUM(ltr) ltr,
+        '''               not_lotok,
+        '''               lotok,
+        '''               ot [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property sql01_неупаковані_лотки() As String
+            Get
+                Return ResourceManager.GetString("sql01_неупаковані_лотки", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT SUM(bl) bl,
+        '''       SUM(zap) zap,
+        '''       dep
+        '''  FROM (SELECT DISTINCT th.task_id,
+        '''                        CASE
+        '''                          WHEN im.cd_master_id = &apos;3001&apos; AND im.sale_grp = &apos;TCK&apos; THEN &apos;OXYGEN&apos;
+        '''                          WHEN im.cd_master_id = &apos;3001&apos; AND im.sale_grp IN (&apos;TCS&apos;, &apos;TCSR&apos;) THEN &apos;USB&apos;
+        '''                          WHEN im.cd_master_id = &apos;3001&apos; THEN &apos;Л-Трейд&apos;
+        '''                          WHEN im.cd_master_id = &apos;6003&apos; THEN
+        '''                           CASE
+        '''                           [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property sql02_Зона_отбора_APL() As String
+            Get
+                Return ResourceManager.GetString("sql02_Зона_отбора_APL", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT SUM(bl) bl,
+        '''       SUM(zap) zap,
+        '''       dep
+        '''  FROM (SELECT DISTINCT th.task_id,
+        '''                        CASE
+        '''                          WHEN th.dflt_task_prty = &apos;63&apos; THEN
+        '''                           &apos;Дистро&apos;
+        '''                          WHEN (ph.cd_master_id = &apos;2001&apos; AND (substr(ph.shipto_name, 1, 5) = &apos;Деком&apos; OR ph.shipto_name = &apos;Д KYI Internet-Інтертоп&apos;)) THEN
+        '''                           &apos;Разбор&apos;
+        '''                          WHEN im.cd_master_id = &apos;16004&apos; THEN
+        '''                           &apos;MASSAZH&apos;        ''' [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property sql03_Зона_отбора_CON() As String
+            Get
+                Return ResourceManager.GetString("sql03_Зона_отбора_CON", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT COUNT(*) a
+        '''  FROM (SELECT DISTINCT th.task_id
+        '''          FROM task_dtl td
+        '''          JOIN task_hdr th ON th.task_id = td.task_id AND th.stat_code &lt; &apos;90&apos;
+        '''          JOIN locn_hdr lh ON lh.locn_id = td.pull_locn_id AND lh.area = &apos;NKZ&apos;
+        '''         WHERE td.cd_master_id NOT IN (&apos;9005&apos;, &apos;9006&apos;, &apos;11005&apos;, &apos;18004&apos;))
+        '''.
+        '''</summary>
+        Friend ReadOnly Property sql04_Зона_отбора_NKZ() As String
+            Get
+                Return ResourceManager.GetString("sql04_Зона_отбора_NKZ", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT COUNT(*) a
+        '''  FROM (SELECT DISTINCT th.task_id
+        '''          FROM task_dtl td
+        '''          JOIN task_hdr th ON th.task_id = td.task_id AND th.stat_code &lt; &apos;90&apos;
+        '''          JOIN locn_hdr lh ON lh.locn_id = td.pull_locn_id AND lh.area = &apos;TRZ&apos;
+        '''         WHERE td.cd_master_id NOT IN (&apos;9005&apos;, &apos;9006&apos;, &apos;11005&apos;, &apos;18004&apos;))
+        '''.
+        '''</summary>
+        Friend ReadOnly Property sql05_Зона_отбора_TRZ() As String
+            Get
+                Return ResourceManager.GetString("sql05_Зона_отбора_TRZ", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT SUM(bl) bl,
+        '''       SUM(zap) zap,
+        '''       dep
+        '''  FROM (SELECT DISTINCT th.task_id,
+        '''                        CASE
+        '''                          WHEN im.cd_master_id = &apos;16004&apos; THEN
+        '''                           &apos;MASSAZH&apos;
+        '''                          WHEN im.cd_master_id = &apos;3001&apos; AND im.sale_grp = &apos;TCK&apos; THEN
+        '''                           &apos;OXYGEN&apos;
+        '''                          WHEN im.cd_master_id = &apos;3001&apos; AND im.sale_grp IN (&apos;TCS&apos;, &apos;TCSR&apos;) THEN
+        '''                           &apos;USB&apos;
+        '''                          WHEN im.cd [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property sql06_Зона_отбора_IVS() As String
+            Get
+                Return ResourceManager.GetString("sql06_Зона_отбора_IVS", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT area,
+        '''       COUNT(tsk) zad,
+        '''       dep
+        '''  FROM (SELECT DISTINCT th.task_id tsk,
+        '''                        lh.area area,
+        '''                        CASE
+        '''                          WHEN im.cd_master_id = &apos;13004&apos; THEN
+        '''                           &apos;Коттон&apos;
+        '''                          WHEN im.cd_master_id = &apos;3001&apos; AND im.sale_grp = &apos;TCK&apos; THEN
+        '''                           &apos;OXYGEN&apos;
+        '''                          WHEN im.cd_master_id = &apos;3001&apos; AND im.sale_grp IN (&apos;TCS&apos;, &apos;TCSR&apos;) THEN
+        '''                           &apos;USB&apos; [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property sql07_Зона_отбора_IV() As String
+            Get
+                Return ResourceManager.GetString("sql07_Зона_отбора_IV", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT SUM(bl) bl,
+        '''       SUM(zap) zap,
+        '''       dep
+        '''  FROM (SELECT DISTINCT th.task_id,
+        '''                        CASE
+        '''                          WHEN im.cd_master_id = &apos;18004&apos; THEN
+        '''                           &apos;Авто з/ч&apos;
+        '''                          WHEN im.cd_master_id = &apos;3001&apos; AND im.sale_grp = &apos;TCK&apos; THEN
+        '''                           &apos;OXYGEN&apos;
+        '''                          WHEN im.cd_master_id = &apos;3001&apos; AND im.sale_grp IN (&apos;TCS&apos;, &apos;TCSR&apos;) THEN
+        '''                           &apos;USB&apos;
+        '''                          WHEN im.c [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property sql08_Пополнение_под_ЗО() As String
+            Get
+                Return ResourceManager.GetString("sql08_Пополнение_под_ЗО", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT st,
+        '''       MAX(lototb) lototb,
+        '''       MAX(lot_popoln) lot_popoln
+        '''  FROM (SELECT st,
+        '''               COUNT(*) lototb,
+        '''               0 lot_popoln
+        '''          FROM (SELECT o.task_id,
+        '''                       c.mod_date_time prisvoen,
+        '''                       MIN(l.pick_detrm_zone) st
+        '''                  FROM task_hdr        o,
+        '''                       task_dtl        d,
+        '''                       locn_hdr        l,
+        '''                       c_umti_mhe_cntr c
+        '''                 WHERE (o.task_id = d.task_id AND [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property sql09_Кол_во_лотков_на_станциях_мезонина() As String
+            Get
+                Return ResourceManager.GetString("sql09_Кол_во_лотков_на_станциях_мезонина", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT CASE
+        '''         WHEN pl LIKE &apos;A%L&apos; THEN
+        '''          &apos;A_L&apos;
+        '''         WHEN pl LIKE &apos;A%R&apos; THEN
+        '''          &apos;A_R&apos;
+        '''         ELSE
+        '''          pl
+        '''       END pl,
+        '''       COUNT(1) vsg,
+        '''       SUM(blok) blk,
+        '''       SUM(wait) vip,
+        '''       SUM(process) wrk,
+        '''       MAX(prostoy) paus,
+        '''       SUM(st40) st40
+        '''  FROM (SELECT th.task_id,
+        '''               th.start_curr_work_area pl,
+        '''               th.curr_task_prty pr,
+        '''               CASE
+        '''                 WHEN th.stat_code = &apos;5&apos; THEN
+        '''                  1
+        '''          [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property sql10_Задания_в_ПС() As String
+            Get
+                Return ResourceManager.GetString("sql10_Задания_в_ПС", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT br,
+        '''       COUNT(sd) sku,
+        '''       SUM(in_di) in_di
+        '''  FROM (SELECT im.size_desc sd,
+        '''               im.sku_desc sd1,
+        '''               substr(im.sku_desc, 1, 3) br,
+        '''               substr(im.sale_grp, 1, 3) sg,
+        '''               sd.distro_nbr din,
+        '''               sm.store_nbr km,
+        '''               sm.name nm,
+        '''               a.city ci,
+        '''               round(sd.reqd_qty) in_di,
+        '''               SUM(cd.actl_qty) na_skl,
+        '''               MAX(ch.create_date_time) posl_pr
+        '''          FROM store_distro sd
+        '''        [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property sql11_дистро() As String
+            Get
+                Return ResourceManager.GetString("sql11_дистро", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT SUM(nev) nev,
+        '''       SUM(zap) zap
+        '''  FROM (SELECT DISTINCT ph.pkt_ctrl_nbr,
+        '''                        CASE
+        '''                          WHEN phi.stat_code &lt; &apos;20&apos; THEN
+        '''                           1
+        '''                          ELSE
+        '''                           0
+        '''                        END nev,
+        '''                        CASE
+        '''                          WHEN phi.stat_code &gt;= &apos;20&apos; THEN
+        '''                           1
+        '''                          ELSE
+        '''                           0
+        '''                        END zap        ''' [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property sql12_Разбор_ростовок_ЗО() As String
+            Get
+                Return ResourceManager.GetString("sql12_Разбор_ростовок_ЗО", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT SUM(nev) nev,
+        '''       SUM(zap) zap
+        '''  FROM (SELECT DISTINCT ph.pkt_ctrl_nbr,
+        '''                        CASE
+        '''                          WHEN phi.stat_code &lt; &apos;20&apos; THEN
+        '''                           pd.orig_pkt_qty
+        '''                          ELSE
+        '''                           0
+        '''                        END nev,
+        '''                        CASE
+        '''                          WHEN phi.stat_code &gt;= &apos;20&apos; THEN
+        '''                           pd.orig_pkt_qty
+        '''                          ELSE
+        '''                           0
+        '''     [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property sql13_Разбор_ростовок_КОРОБ() As String
+            Get
+                Return ResourceManager.GetString("sql13_Разбор_ростовок_КОРОБ", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT dep,
+        '''       COUNT(zo) zo
+        '''  FROM (SELECT DISTINCT                                 CASE
+        '''                                  WHEN im.cd_master_id = &apos;3001&apos; AND im.sale_grp = &apos;TCK&apos; THEN &apos;OXYGEN&apos;
+        '''                                  WHEN im.cd_master_id = &apos;3001&apos; AND im.sale_grp IN (&apos;TCS&apos;, &apos;TCSR&apos;) THEN &apos;USB&apos;
+        '''                                  WHEN im.cd_master_id = &apos;3001&apos; THEN &apos;Л-Трейд&apos;
+        '''                                  WHEN im.cd_master_id = &apos;6003&apos; THEN
+        '''                                   CASE
+        '''            [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property sql14_незапущенные_ЗО() As String
+            Get
+                Return ResourceManager.GetString("sql14_незапущенные_ЗО", resourceCulture)
+            End Get
         End Property
     End Module
 End Namespace

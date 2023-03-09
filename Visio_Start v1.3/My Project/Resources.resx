@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -114,4 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="db_property" xml:space="preserve">
+    <value>Provider=OraOLEDB.Oracle.1;User ID=gnatyk;Password=gnatyk;Data Source=WMOS_PROD;Persist Security Info=False</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoLittle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoLittle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sql01_неупаковані_лотки" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql01 неупаковані лотки.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="sql02_Зона_отбора_APL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql02 Зона отбора APL.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="sql03_Зона_отбора_CON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql03 Зона отбора CON.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="sql04_Зона_отбора_NKZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql04 Зона отбора NKZ.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="sql05_Зона_отбора_TRZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql05 Зона отбора TRZ.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="sql06_Зона_отбора_IVS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql06 Зона отбора IVS.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="sql07_Зона_отбора_IV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql07 Зона отбора IV.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="sql08_Пополнение_под_ЗО" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql08 Пополнение под ЗО.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="sql09_Кол_во_лотков_на_станциях_мезонина" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql09 Кол-во лотков на станциях мезонина.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="sql10_Задания_в_ПС" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql10 Задания в ПС.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="sql11_дистро" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql11 дистро.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="sql12_Разбор_ростовок_ЗО" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql12 Разбор ростовок ЗО.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="sql13_Разбор_ростовок_КОРОБ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql13 Разбор ростовок КОРОБ.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="sql14_незапущенные_ЗО" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sql14 незапущенные ЗО.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
 </root>
