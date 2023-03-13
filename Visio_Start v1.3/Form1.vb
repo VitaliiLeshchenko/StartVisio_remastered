@@ -12,7 +12,7 @@
         Me.HorizontalScroll.Maximum = 0
         Me.AutoScroll = True
         initialize_connection()
-        обновить_все()
+        'обновить_все()
     End Sub
 
     Private Sub initialize_connection()
@@ -167,7 +167,6 @@
         '**********************************************************************
     End Sub
     Private Sub refresh_Кол_во_лотков_на_станциях_мезонина()
-        'Кол-во лотков на станциях мезонина **************************************************
         DataGridView7.Rows.Clear()
         orarec.Open(My.Resources.sql09_Кол_во_лотков_на_станциях_мезонина, oraconn)
         ind = 0
@@ -178,6 +177,7 @@
             b = orarec.Fields("lototb").Value
             c = orarec.Fields("lot_popoln").Value
             DataGridView7.Rows.Add(a, b, c)
+            If a Like "*8" Then DataGridView7.Rows(ind).DefaultCellStyle.BackColor = Color.Yellow
             d = d + b
             e = e + c
             ind = ind + 1
@@ -185,9 +185,7 @@
         Loop
         If d <> 0 Or e <> 0 Then DataGridView7.Rows.Add("Итого:", d, e) : DataGridView7.Rows(ind).DefaultCellStyle.BackColor = Color.Cyan
         Me.DataGridView7.Refresh()
-        DataGridView7.AllowUserToAddRows = False
         orarec.Close()
-        '**********************************************************************
     End Sub
     Private Sub refresh_Задания_в_ПС()
         'Задания в ПС **************************************************
@@ -232,17 +230,32 @@
         orarec.Close()
         '**********************************************************************
     End Sub
+    Private Sub refresh_Button_Незапущені_ЗО()
+        DGV_Незапущені_ЗО.Rows.Clear()
+        orarec.Open(My.Resources.sql14_незапущенные_ЗО, oraconn)
+        Do Until orarec.EOF
+            DGV_Незапущені_ЗО.Rows.Add(orarec.fields(0).value, orarec.fields(1).value)
+            orarec.MoveNext()
+        Loop
+        orarec.Close()
+    End Sub
+
+    Private Sub Button_Незапущені_ЗО_Click(sender As Object, e As EventArgs) Handles Button_Незапущені_ЗО.Click
+        refresh_Button_Незапущені_ЗО()
+    End Sub
+
     Public Sub обновить_все()
-        refresh_Неупакованные_лотки()
-        refresh_Зона_отбора_APL()
-        refresh_Зона_отбора_CON()
-        refresh_Зона_отбора_NKZ_TRZ()
-        refresh_Зона_отбора_IVS()
-        refresh_Зона_отбора_IV()
-        refresh_Пополнение_под_ЗО()
+        'refresh_Неупакованные_лотки()
+        'refresh_Зона_отбора_APL()
+        'refresh_Зона_отбора_CON()
+        'refresh_Зона_отбора_NKZ_TRZ()
+        'refresh_Зона_отбора_IVS()
+        'refresh_Зона_отбора_IV()
+        'refresh_Пополнение_под_ЗО()
         refresh_Кол_во_лотков_на_станциях_мезонина()
-        refresh_Задания_в_ПС()
-        refresh_Дистро()
+        'refresh_Задания_в_ПС()
+        'refresh_Дистро()
+        refresh_Button_Незапущені_ЗО()
         Form1.ActiveForm.Text = "StartVisio | обновлено:" & Now
     End Sub
 

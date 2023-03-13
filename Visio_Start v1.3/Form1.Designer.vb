@@ -43,6 +43,9 @@ Partial Class Form1
         Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -54,17 +57,24 @@ Partial Class Form1
         Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle34 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle35 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle43 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle42 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle41 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle40 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle39 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle38 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle37 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle36 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle37 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle38 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle39 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle40 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle41 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle42 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle44 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle47 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle48 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle49 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle45 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle46 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle50 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle51 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle52 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle53 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Button_Неупакованные_лотки = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -117,6 +127,9 @@ Partial Class Form1
         Me.TextBox23 = New System.Windows.Forms.TextBox()
         Me.TextBox24 = New System.Windows.Forms.TextBox()
         Me.DataGridView7 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.TextBox25 = New System.Windows.Forms.TextBox()
@@ -151,17 +164,14 @@ Partial Class Form1
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
         Me.Button_refresh_all = New System.Windows.Forms.Button()
-        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Тип = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Тип = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TextBox100 = New System.Windows.Forms.TextBox()
         Me.TextBox101 = New System.Windows.Forms.TextBox()
         Me.TextBox102 = New System.Windows.Forms.TextBox()
@@ -170,6 +180,18 @@ Partial Class Form1
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.DGV_Незапущені_ЗО = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button_Незапущені_ЗО = New System.Windows.Forms.Button()
+        Me.GroupBox11 = New System.Windows.Forms.GroupBox()
+        Me.TextBox36 = New System.Windows.Forms.TextBox()
+        Me.TextBox35 = New System.Windows.Forms.TextBox()
+        Me.GroupBox12 = New System.Windows.Forms.GroupBox()
+        Me.TextBox37 = New System.Windows.Forms.TextBox()
+        Me.TextBox38 = New System.Windows.Forms.TextBox()
+        Me.DataGridView10 = New System.Windows.Forms.DataGridView()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -190,13 +212,17 @@ Partial Class Form1
         Me.GroupBox7.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox6.SuspendLayout()
+        CType(Me.DGV_Незапущені_ЗО, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox11.SuspendLayout()
+        Me.GroupBox12.SuspendLayout()
+        CType(Me.DataGridView10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button_Неупакованные_лотки
         '
         Me.Button_Неупакованные_лотки.BackColor = System.Drawing.Color.Lime
         Me.Button_Неупакованные_лотки.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button_Неупакованные_лотки.Location = New System.Drawing.Point(12, 9)
+        Me.Button_Неупакованные_лотки.Location = New System.Drawing.Point(2, 2)
         Me.Button_Неупакованные_лотки.Name = "Button_Неупакованные_лотки"
         Me.Button_Неупакованные_лотки.Size = New System.Drawing.Size(380, 30)
         Me.Button_Неупакованные_лотки.TabIndex = 100
@@ -207,7 +233,7 @@ Partial Class Form1
         '
         Me.Button3.BackColor = System.Drawing.Color.Yellow
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button3.Location = New System.Drawing.Point(405, 264)
+        Me.Button3.Location = New System.Drawing.Point(395, 258)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(180, 30)
         Me.Button3.TabIndex = 104
@@ -221,7 +247,7 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.TextBox16)
         Me.GroupBox2.Controls.Add(Me.TextBox17)
         Me.GroupBox2.Controls.Add(Me.DataGridView3)
-        Me.GroupBox2.Location = New System.Drawing.Point(405, 296)
+        Me.GroupBox2.Location = New System.Drawing.Point(395, 282)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(180, 116)
         Me.GroupBox2.TabIndex = 103
@@ -275,7 +301,7 @@ Partial Class Form1
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView3.DefaultCellStyle = DataGridViewCellStyle4
-        Me.DataGridView3.Location = New System.Drawing.Point(5, 36)
+        Me.DataGridView3.Location = New System.Drawing.Point(6, 34)
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.RowHeadersVisible = False
         Me.DataGridView3.RowTemplate.Height = 21
@@ -315,7 +341,7 @@ Partial Class Form1
         '
         Me.Button4.BackColor = System.Drawing.Color.Yellow
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button4.Location = New System.Drawing.Point(405, 418)
+        Me.Button4.Location = New System.Drawing.Point(395, 415)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(180, 30)
         Me.Button4.TabIndex = 106
@@ -329,7 +355,7 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.TextBox13)
         Me.GroupBox3.Controls.Add(Me.TextBox14)
         Me.GroupBox3.Controls.Add(Me.DataGridView4)
-        Me.GroupBox3.Location = New System.Drawing.Point(405, 451)
+        Me.GroupBox3.Location = New System.Drawing.Point(395, 437)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(180, 238)
         Me.GroupBox3.TabIndex = 105
@@ -426,7 +452,7 @@ Partial Class Form1
         '
         Me.Button2.BackColor = System.Drawing.Color.Yellow
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button2.Location = New System.Drawing.Point(405, 9)
+        Me.Button2.Location = New System.Drawing.Point(395, 2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(180, 30)
         Me.Button2.TabIndex = 111
@@ -440,7 +466,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.TextBox9)
         Me.GroupBox1.Controls.Add(Me.TextBox10)
         Me.GroupBox1.Controls.Add(Me.DataGridView2)
-        Me.GroupBox1.Location = New System.Drawing.Point(405, 40)
+        Me.GroupBox1.Location = New System.Drawing.Point(395, 26)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(180, 218)
         Me.GroupBox1.TabIndex = 110
@@ -537,7 +563,7 @@ Partial Class Form1
         '
         Me.Button5.BackColor = System.Drawing.Color.Yellow
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button5.Location = New System.Drawing.Point(601, 289)
+        Me.Button5.Location = New System.Drawing.Point(591, 284)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(180, 30)
         Me.Button5.TabIndex = 113
@@ -551,7 +577,7 @@ Partial Class Form1
         Me.GroupBox4.Controls.Add(Me.TextBox18)
         Me.GroupBox4.Controls.Add(Me.TextBox19)
         Me.GroupBox4.Controls.Add(Me.DataGridView5)
-        Me.GroupBox4.Location = New System.Drawing.Point(601, 320)
+        Me.GroupBox4.Location = New System.Drawing.Point(591, 306)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(180, 177)
         Me.GroupBox4.TabIndex = 112
@@ -648,7 +674,7 @@ Partial Class Form1
         '
         Me.Button6.BackColor = System.Drawing.Color.Yellow
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button6.Location = New System.Drawing.Point(601, 9)
+        Me.Button6.Location = New System.Drawing.Point(591, 2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(180, 30)
         Me.Button6.TabIndex = 115
@@ -662,7 +688,7 @@ Partial Class Form1
         Me.GroupBox5.Controls.Add(Me.DataGridView6)
         Me.GroupBox5.Controls.Add(Me.TextBox22)
         Me.GroupBox5.Controls.Add(Me.TextBox39)
-        Me.GroupBox5.Location = New System.Drawing.Point(601, 40)
+        Me.GroupBox5.Location = New System.Drawing.Point(591, 26)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(180, 243)
         Me.GroupBox5.TabIndex = 114
@@ -695,7 +721,7 @@ Partial Class Form1
         DataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView6.DefaultCellStyle = DataGridViewCellStyle20
-        Me.DataGridView6.Location = New System.Drawing.Point(6, 33)
+        Me.DataGridView6.Location = New System.Drawing.Point(6, 34)
         Me.DataGridView6.Name = "DataGridView6"
         Me.DataGridView6.RowHeadersVisible = False
         Me.DataGridView6.RowTemplate.Height = 21
@@ -757,9 +783,9 @@ Partial Class Form1
         '
         'Button7
         '
-        Me.Button7.BackColor = System.Drawing.Color.Lime
+        Me.Button7.BackColor = System.Drawing.Color.Yellow
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button7.Location = New System.Drawing.Point(796, 8)
+        Me.Button7.Location = New System.Drawing.Point(786, 2)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(158, 34)
         Me.Button7.TabIndex = 118
@@ -773,9 +799,9 @@ Partial Class Form1
         Me.GroupBox8.Controls.Add(Me.TextBox23)
         Me.GroupBox8.Controls.Add(Me.TextBox24)
         Me.GroupBox8.Controls.Add(Me.DataGridView7)
-        Me.GroupBox8.Location = New System.Drawing.Point(796, 43)
+        Me.GroupBox8.Location = New System.Drawing.Point(786, 26)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(158, 766)
+        Me.GroupBox8.Size = New System.Drawing.Size(158, 744)
         Me.GroupBox8.TabIndex = 117
         Me.GroupBox8.TabStop = False
         '
@@ -783,10 +809,10 @@ Partial Class Form1
         '
         Me.TextBox20.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.TextBox20.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox20.Location = New System.Drawing.Point(98, 10)
+        Me.TextBox20.Location = New System.Drawing.Point(104, 10)
         Me.TextBox20.Multiline = True
         Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(43, 20)
+        Me.TextBox20.Size = New System.Drawing.Size(49, 20)
         Me.TextBox20.TabIndex = 12
         Me.TextBox20.Text = "Пополн."
         Me.TextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -795,12 +821,12 @@ Partial Class Form1
         '
         Me.TextBox23.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.TextBox23.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox23.Location = New System.Drawing.Point(53, 10)
+        Me.TextBox23.Location = New System.Drawing.Point(59, 10)
         Me.TextBox23.Multiline = True
         Me.TextBox23.Name = "TextBox23"
-        Me.TextBox23.Size = New System.Drawing.Size(42, 20)
+        Me.TextBox23.Size = New System.Drawing.Size(46, 20)
         Me.TextBox23.TabIndex = 11
-        Me.TextBox23.Text = "Отборочных"
+        Me.TextBox23.Text = "Отбор"
         Me.TextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox24
@@ -810,7 +836,7 @@ Partial Class Form1
         Me.TextBox24.Location = New System.Drawing.Point(6, 10)
         Me.TextBox24.Multiline = True
         Me.TextBox24.Name = "TextBox24"
-        Me.TextBox24.Size = New System.Drawing.Size(44, 20)
+        Me.TextBox24.Size = New System.Drawing.Size(54, 20)
         Me.TextBox24.TabIndex = 10
         Me.TextBox24.Text = "Станция"
         Me.TextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -834,14 +860,43 @@ Partial Class Form1
         Me.DataGridView7.Name = "DataGridView7"
         Me.DataGridView7.RowHeadersVisible = False
         Me.DataGridView7.RowTemplate.Height = 21
-        Me.DataGridView7.Size = New System.Drawing.Size(145, 723)
+        Me.DataGridView7.Size = New System.Drawing.Size(145, 703)
         Me.DataGridView7.TabIndex = 0
+        '
+        'DataGridViewTextBoxColumn18
+        '
+        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle21.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.DataGridViewTextBoxColumn18.DefaultCellStyle = DataGridViewCellStyle21
+        Me.DataGridViewTextBoxColumn18.HeaderText = "Тек. дата"
+        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
+        Me.DataGridViewTextBoxColumn18.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn18.Width = 52
+        '
+        'DataGridViewTextBoxColumn19
+        '
+        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.DataGridViewTextBoxColumn19.DefaultCellStyle = DataGridViewCellStyle22
+        Me.DataGridViewTextBoxColumn19.HeaderText = "Департамент"
+        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
+        Me.DataGridViewTextBoxColumn19.Width = 45
+        '
+        'DataGridViewTextBoxColumn20
+        '
+        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.DataGridViewTextBoxColumn20.DefaultCellStyle = DataGridViewCellStyle23
+        Me.DataGridViewTextBoxColumn20.HeaderText = "Общее кол-во"
+        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        Me.DataGridViewTextBoxColumn20.Width = 45
         '
         'Button8
         '
         Me.Button8.BackColor = System.Drawing.Color.Lime
         Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button8.Location = New System.Drawing.Point(12, 350)
+        Me.Button8.Location = New System.Drawing.Point(2, 345)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(380, 30)
         Me.Button8.TabIndex = 120
@@ -859,9 +914,9 @@ Partial Class Form1
         Me.GroupBox9.Controls.Add(Me.TextBox30)
         Me.GroupBox9.Controls.Add(Me.TextBox31)
         Me.GroupBox9.Controls.Add(Me.DataGridView8)
-        Me.GroupBox9.Location = New System.Drawing.Point(12, 382)
+        Me.GroupBox9.Location = New System.Drawing.Point(2, 368)
         Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Size = New System.Drawing.Size(380, 427)
+        Me.GroupBox9.Size = New System.Drawing.Size(380, 405)
         Me.GroupBox9.TabIndex = 119
         Me.GroupBox9.TabStop = False
         '
@@ -964,11 +1019,11 @@ Partial Class Form1
         DataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView8.DefaultCellStyle = DataGridViewCellStyle32
-        Me.DataGridView8.Location = New System.Drawing.Point(6, 35)
+        Me.DataGridView8.Location = New System.Drawing.Point(6, 34)
         Me.DataGridView8.Name = "DataGridView8"
         Me.DataGridView8.RowHeadersVisible = False
         Me.DataGridView8.RowTemplate.Height = 21
-        Me.DataGridView8.Size = New System.Drawing.Size(368, 383)
+        Me.DataGridView8.Size = New System.Drawing.Size(368, 363)
         Me.DataGridView8.TabIndex = 0
         '
         'DataGridViewTextBoxColumn21
@@ -1040,7 +1095,7 @@ Partial Class Form1
         '
         Me.Button9.BackColor = System.Drawing.Color.Yellow
         Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button9.Location = New System.Drawing.Point(601, 503)
+        Me.Button9.Location = New System.Drawing.Point(591, 497)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(180, 30)
         Me.Button9.TabIndex = 122
@@ -1054,7 +1109,7 @@ Partial Class Form1
         Me.GroupBox10.Controls.Add(Me.TextBox33)
         Me.GroupBox10.Controls.Add(Me.TextBox34)
         Me.GroupBox10.Controls.Add(Me.DataGridView9)
-        Me.GroupBox10.Location = New System.Drawing.Point(601, 534)
+        Me.GroupBox10.Location = New System.Drawing.Point(591, 520)
         Me.GroupBox10.Name = "GroupBox10"
         Me.GroupBox10.Size = New System.Drawing.Size(180, 155)
         Me.GroupBox10.TabIndex = 121
@@ -1100,7 +1155,7 @@ Partial Class Form1
         '
         Me.DataGridView9.ColumnHeadersVisible = False
         Me.DataGridView9.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn30})
-        Me.DataGridView9.Location = New System.Drawing.Point(6, 36)
+        Me.DataGridView9.Location = New System.Drawing.Point(6, 34)
         Me.DataGridView9.Name = "DataGridView9"
         Me.DataGridView9.RowHeadersVisible = False
         Me.DataGridView9.RowTemplate.Height = 21
@@ -1140,7 +1195,7 @@ Partial Class Form1
         '
         Me.Button10.BackColor = System.Drawing.Color.Yellow
         Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button10.Location = New System.Drawing.Point(601, 695)
+        Me.Button10.Location = New System.Drawing.Point(591, 681)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(180, 30)
         Me.Button10.TabIndex = 124
@@ -1150,7 +1205,7 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.StartVisio.My.Resources.Resources.LogoLittle
-        Me.PictureBox1.Location = New System.Drawing.Point(960, 699)
+        Me.PictureBox1.Location = New System.Drawing.Point(950, 663)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(300, 110)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -1210,50 +1265,21 @@ Partial Class Form1
         Me.GroupBox7.Controls.Add(Me.TextBox4)
         Me.GroupBox7.Controls.Add(Me.TextBox6)
         Me.GroupBox7.Controls.Add(Me.TextBox7)
-        Me.GroupBox7.Location = New System.Drawing.Point(405, 695)
+        Me.GroupBox7.Location = New System.Drawing.Point(395, 681)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(180, 105)
+        Me.GroupBox7.Size = New System.Drawing.Size(180, 85)
         Me.GroupBox7.TabIndex = 116
         Me.GroupBox7.TabStop = False
         '
         'Button_refresh_all
         '
         Me.Button_refresh_all.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button_refresh_all.Location = New System.Drawing.Point(960, 648)
+        Me.Button_refresh_all.Location = New System.Drawing.Point(950, 612)
         Me.Button_refresh_all.Name = "Button_refresh_all"
         Me.Button_refresh_all.Size = New System.Drawing.Size(300, 45)
         Me.Button_refresh_all.TabIndex = 126
         Me.Button_refresh_all.Text = "Оновити дані"
         Me.Button_refresh_all.UseVisualStyleBackColor = True
-        '
-        'DataGridViewTextBoxColumn18
-        '
-        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle21.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.DataGridViewTextBoxColumn18.DefaultCellStyle = DataGridViewCellStyle21
-        Me.DataGridViewTextBoxColumn18.HeaderText = "Тек. дата"
-        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
-        Me.DataGridViewTextBoxColumn18.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewTextBoxColumn18.Width = 49
-        '
-        'DataGridViewTextBoxColumn19
-        '
-        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.DataGridViewTextBoxColumn19.DefaultCellStyle = DataGridViewCellStyle22
-        Me.DataGridViewTextBoxColumn19.HeaderText = "Департамент"
-        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
-        Me.DataGridViewTextBoxColumn19.Width = 45
-        '
-        'DataGridViewTextBoxColumn20
-        '
-        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.DataGridViewTextBoxColumn20.DefaultCellStyle = DataGridViewCellStyle23
-        Me.DataGridViewTextBoxColumn20.HeaderText = "Общее кол-во"
-        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
-        Me.DataGridViewTextBoxColumn20.Width = 45
         '
         'DataGridView1
         '
@@ -1277,60 +1303,6 @@ Partial Class Form1
         Me.DataGridView1.Size = New System.Drawing.Size(368, 257)
         Me.DataGridView1.TabIndex = 0
         '
-        'Column3
-        '
-        DataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle42.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Column3.DefaultCellStyle = DataGridViewCellStyle42
-        Me.Column3.HeaderText = "Всего"
-        Me.Column3.Name = "Column3"
-        Me.Column3.Width = 40
-        '
-        'Column2
-        '
-        DataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle41.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Column2.DefaultCellStyle = DataGridViewCellStyle41
-        Me.Column2.HeaderText = "Упаковано"
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 40
-        '
-        'Column1
-        '
-        DataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle40.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Column1.DefaultCellStyle = DataGridViewCellStyle40
-        Me.Column1.HeaderText = "В упаковке"
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 40
-        '
-        'Тип
-        '
-        DataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle39.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Тип.DefaultCellStyle = DataGridViewCellStyle39
-        Me.Тип.HeaderText = "В отборе"
-        Me.Тип.Name = "Тип"
-        Me.Тип.Width = 40
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        DataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle38.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle38
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Невыполненные"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.Width = 40
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        DataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle37.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle37
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Департамент"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.Width = 90
-        '
         'DataGridViewTextBoxColumn4
         '
         DataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
@@ -1341,6 +1313,60 @@ Partial Class Form1
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         Me.DataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridViewTextBoxColumn4.Width = 75
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        DataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle37.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle37
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Департамент"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.Width = 90
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        DataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle38.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle38
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Невыполненные"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.Width = 40
+        '
+        'Тип
+        '
+        DataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle39.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Тип.DefaultCellStyle = DataGridViewCellStyle39
+        Me.Тип.HeaderText = "В отборе"
+        Me.Тип.Name = "Тип"
+        Me.Тип.Width = 40
+        '
+        'Column1
+        '
+        DataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle40.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Column1.DefaultCellStyle = DataGridViewCellStyle40
+        Me.Column1.HeaderText = "В упаковке"
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 40
+        '
+        'Column2
+        '
+        DataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle41.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Column2.DefaultCellStyle = DataGridViewCellStyle41
+        Me.Column2.HeaderText = "Упаковано"
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 40
+        '
+        'Column3
+        '
+        DataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle42.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Column3.DefaultCellStyle = DataGridViewCellStyle42
+        Me.Column3.HeaderText = "Всего"
+        Me.Column3.Name = "Column3"
+        Me.Column3.Width = 40
         '
         'TextBox100
         '
@@ -1437,23 +1463,214 @@ Partial Class Form1
         Me.GroupBox6.Controls.Add(Me.TextBox101)
         Me.GroupBox6.Controls.Add(Me.TextBox100)
         Me.GroupBox6.Controls.Add(Me.DataGridView1)
-        Me.GroupBox6.Location = New System.Drawing.Point(12, 40)
+        Me.GroupBox6.Location = New System.Drawing.Point(2, 26)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(380, 297)
         Me.GroupBox6.TabIndex = 99
         Me.GroupBox6.TabStop = False
         '
+        'DGV_Незапущені_ЗО
+        '
+        Me.DGV_Незапущені_ЗО.AllowUserToAddRows = False
+        Me.DGV_Незапущені_ЗО.AllowUserToDeleteRows = False
+        Me.DGV_Незапущені_ЗО.AllowUserToResizeRows = False
+        DataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle44.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        DataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_Незапущені_ЗО.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle44
+        Me.DGV_Незапущені_ЗО.ColumnHeadersVisible = False
+        Me.DGV_Незапущені_ЗО.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn32, Me.DataGridViewTextBoxColumn33})
+        DataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle47.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        DataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV_Незапущені_ЗО.DefaultCellStyle = DataGridViewCellStyle47
+        Me.DGV_Незапущені_ЗО.Location = New System.Drawing.Point(6, 34)
+        Me.DGV_Незапущені_ЗО.Name = "DGV_Незапущені_ЗО"
+        DataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_Незапущені_ЗО.RowHeadersDefaultCellStyle = DataGridViewCellStyle48
+        Me.DGV_Незапущені_ЗО.RowHeadersVisible = False
+        DataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle49.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.DGV_Незапущені_ЗО.RowsDefaultCellStyle = DataGridViewCellStyle49
+        Me.DGV_Незапущені_ЗО.RowTemplate.Height = 21
+        Me.DGV_Незапущені_ЗО.Size = New System.Drawing.Size(180, 218)
+        Me.DGV_Незапущені_ЗО.TabIndex = 12
+        '
+        'DataGridViewTextBoxColumn32
+        '
+        DataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle45.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.DataGridViewTextBoxColumn32.DefaultCellStyle = DataGridViewCellStyle45
+        Me.DataGridViewTextBoxColumn32.HeaderText = "Департамент"
+        Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
+        Me.DataGridViewTextBoxColumn32.Width = 119
+        '
+        'DataGridViewTextBoxColumn33
+        '
+        DataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle46.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.DataGridViewTextBoxColumn33.DefaultCellStyle = DataGridViewCellStyle46
+        Me.DataGridViewTextBoxColumn33.HeaderText = "кіл-ть."
+        Me.DataGridViewTextBoxColumn33.Name = "DataGridViewTextBoxColumn33"
+        Me.DataGridViewTextBoxColumn33.Width = 58
+        '
+        'Button_Незапущені_ЗО
+        '
+        Me.Button_Незапущені_ЗО.BackColor = System.Drawing.Color.Yellow
+        Me.Button_Незапущені_ЗО.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Button_Незапущені_ЗО.Location = New System.Drawing.Point(950, 2)
+        Me.Button_Незапущені_ЗО.Name = "Button_Незапущені_ЗО"
+        Me.Button_Незапущені_ЗО.Size = New System.Drawing.Size(193, 34)
+        Me.Button_Незапущені_ЗО.TabIndex = 128
+        Me.Button_Незапущені_ЗО.Text = "Незапущені ЗО"
+        Me.Button_Незапущені_ЗО.UseVisualStyleBackColor = False
+        '
+        'GroupBox11
+        '
+        Me.GroupBox11.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.GroupBox11.Controls.Add(Me.TextBox36)
+        Me.GroupBox11.Controls.Add(Me.TextBox35)
+        Me.GroupBox11.Controls.Add(Me.DGV_Незапущені_ЗО)
+        Me.GroupBox11.Location = New System.Drawing.Point(950, 26)
+        Me.GroupBox11.Name = "GroupBox11"
+        Me.GroupBox11.Size = New System.Drawing.Size(193, 264)
+        Me.GroupBox11.TabIndex = 129
+        Me.GroupBox11.TabStop = False
+        '
+        'TextBox36
+        '
+        Me.TextBox36.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.TextBox36.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox36.Location = New System.Drawing.Point(126, 10)
+        Me.TextBox36.Multiline = True
+        Me.TextBox36.Name = "TextBox36"
+        Me.TextBox36.Size = New System.Drawing.Size(61, 20)
+        Me.TextBox36.TabIndex = 14
+        Me.TextBox36.Text = "к-сть."
+        Me.TextBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'TextBox35
+        '
+        Me.TextBox35.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.TextBox35.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox35.Location = New System.Drawing.Point(6, 10)
+        Me.TextBox35.Multiline = True
+        Me.TextBox35.Name = "TextBox35"
+        Me.TextBox35.Size = New System.Drawing.Size(124, 20)
+        Me.TextBox35.TabIndex = 13
+        Me.TextBox35.Text = "Департамент"
+        Me.TextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GroupBox12
+        '
+        Me.GroupBox12.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.GroupBox12.Controls.Add(Me.TextBox37)
+        Me.GroupBox12.Controls.Add(Me.TextBox38)
+        Me.GroupBox12.Controls.Add(Me.DataGridView10)
+        Me.GroupBox12.Location = New System.Drawing.Point(950, 327)
+        Me.GroupBox12.Name = "GroupBox12"
+        Me.GroupBox12.Size = New System.Drawing.Size(193, 264)
+        Me.GroupBox12.TabIndex = 131
+        Me.GroupBox12.TabStop = False
+        '
+        'TextBox37
+        '
+        Me.TextBox37.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.TextBox37.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox37.Location = New System.Drawing.Point(126, 10)
+        Me.TextBox37.Multiline = True
+        Me.TextBox37.Name = "TextBox37"
+        Me.TextBox37.Size = New System.Drawing.Size(61, 20)
+        Me.TextBox37.TabIndex = 14
+        Me.TextBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'TextBox38
+        '
+        Me.TextBox38.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.TextBox38.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox38.Location = New System.Drawing.Point(6, 10)
+        Me.TextBox38.Multiline = True
+        Me.TextBox38.Name = "TextBox38"
+        Me.TextBox38.Size = New System.Drawing.Size(124, 20)
+        Me.TextBox38.TabIndex = 13
+        Me.TextBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'DataGridView10
+        '
+        Me.DataGridView10.AllowUserToAddRows = False
+        Me.DataGridView10.AllowUserToDeleteRows = False
+        Me.DataGridView10.AllowUserToResizeRows = False
+        DataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle50.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle50.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        DataGridViewCellStyle50.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView10.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle50
+        Me.DataGridView10.ColumnHeadersVisible = False
+        DataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle51.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle51.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        DataGridViewCellStyle51.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle51.SelectionBackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle51.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView10.DefaultCellStyle = DataGridViewCellStyle51
+        Me.DataGridView10.Location = New System.Drawing.Point(6, 34)
+        Me.DataGridView10.Name = "DataGridView10"
+        DataGridViewCellStyle52.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle52.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle52.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle52.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView10.RowHeadersDefaultCellStyle = DataGridViewCellStyle52
+        Me.DataGridView10.RowHeadersVisible = False
+        DataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle53.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.DataGridView10.RowsDefaultCellStyle = DataGridViewCellStyle53
+        Me.DataGridView10.RowTemplate.Height = 21
+        Me.DataGridView10.Size = New System.Drawing.Size(180, 218)
+        Me.DataGridView10.TabIndex = 12
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Yellow
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Button1.Location = New System.Drawing.Point(950, 299)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(193, 34)
+        Me.Button1.TabIndex = 130
+        Me.Button1.Text = "Відвантажено за сьогодні"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1265, 815)
+        Me.ClientSize = New System.Drawing.Size(1265, 796)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button_Незапущені_ЗО)
+        Me.Controls.Add(Me.GroupBox12)
+        Me.Controls.Add(Me.GroupBox11)
         Me.Controls.Add(Me.Button_refresh_all)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.GroupBox4)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.GroupBox10)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.GroupBox9)
@@ -1502,6 +1719,12 @@ Partial Class Form1
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
+        CType(Me.DGV_Незапущені_ЗО, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox11.ResumeLayout(False)
+        Me.GroupBox11.PerformLayout()
+        Me.GroupBox12.ResumeLayout(False)
+        Me.GroupBox12.PerformLayout()
+        CType(Me.DataGridView10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1592,9 +1815,6 @@ Partial Class Form1
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents GroupBox7 As GroupBox
     Friend WithEvents Button_refresh_all As Button
-    Friend WithEvents DataGridViewTextBoxColumn18 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn19 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
@@ -1611,4 +1831,19 @@ Partial Class Form1
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents GroupBox6 As GroupBox
+    Friend WithEvents DGV_Незапущені_ЗО As DataGridView
+    Friend WithEvents Button_Незапущені_ЗО As Button
+    Friend WithEvents GroupBox11 As GroupBox
+    Friend WithEvents TextBox35 As TextBox
+    Friend WithEvents TextBox36 As TextBox
+    Friend WithEvents DataGridViewTextBoxColumn32 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn33 As DataGridViewTextBoxColumn
+    Friend WithEvents GroupBox12 As GroupBox
+    Friend WithEvents TextBox37 As TextBox
+    Friend WithEvents TextBox38 As TextBox
+    Friend WithEvents DataGridView10 As DataGridView
+    Friend WithEvents Button1 As Button
+    Friend WithEvents DataGridViewTextBoxColumn18 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn19 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
 End Class
