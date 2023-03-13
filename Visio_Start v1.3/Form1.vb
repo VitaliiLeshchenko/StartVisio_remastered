@@ -22,7 +22,6 @@
     End Sub
 
     Private Sub refresh_Неупакованные_лотки()
-        'Неупакованные лотки **************************************************
         DataGridView1.Rows.Clear()
         orarec.Open(My.Resources.sql01_неупаковані_лотки, oraconn)
         ind = 0
@@ -43,8 +42,6 @@
         Me.DataGridView1.Refresh()
         DataGridView1.AllowUserToAddRows = False
         orarec.Close()
-
-        '**********************************************************************
     End Sub
     Private Sub refresh_Зона_отбора_APL()
         'Зона отбора APL **************************************************
@@ -72,7 +69,7 @@
         '**********************************************************************
     End Sub
     Private Sub refresh_Зона_отбора_CON()
-        'Зона отбора CON **************************************************
+        DataGridView4.Rows.Clear()
         orarec.Open(My.Resources.sql03_Зона_отбора_CON, oraconn)
         ind = 0
         d = 0
@@ -91,9 +88,6 @@
         Me.DataGridView4.Refresh()
         DataGridView4.AllowUserToAddRows = False
         orarec.Close()
-
-        '**********************************************************************
-
     End Sub
     Private Sub refresh_Зона_отбора_NKZ_TRZ()
         'Зона отбора NKZ, TRZ **************************************************
@@ -239,17 +233,21 @@
         '**********************************************************************
     End Sub
     Public Sub обновить_все()
-        'refresh_Неупакованные_лотки()
-        'refresh_Зона_отбора_APL()
-        'refresh_Зона_отбора_CON()
-        'refresh_Зона_отбора_NKZ_TRZ()
-        'refresh_Зона_отбора_IVS()
-        'refresh_Зона_отбора_IV()
-        'refresh_Пополнение_под_ЗО()
+        refresh_Неупакованные_лотки()
+        refresh_Зона_отбора_APL()
+        refresh_Зона_отбора_CON()
+        refresh_Зона_отбора_NKZ_TRZ()
+        refresh_Зона_отбора_IVS()
+        refresh_Зона_отбора_IV()
+        refresh_Пополнение_под_ЗО()
         refresh_Кол_во_лотков_на_станциях_мезонина()
-        'refresh_Задания_в_ПС()
-        'refresh_Дистро()
+        refresh_Задания_в_ПС()
+        refresh_Дистро()
+        Form1.ActiveForm.Text = "StartVisio | обновлено:" & Now
+    End Sub
 
+    Private Sub Button_refresh_all_Click(sender As Object, e As EventArgs) Handles Button_refresh_all.Click
+        обновить_все()
     End Sub
 
     Private Sub Close_connection()
