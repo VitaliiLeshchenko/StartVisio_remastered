@@ -4,8 +4,8 @@
                  CASE
                    WHEN im.cd_master_id = '2001' THEN
                      CASE
-                       WHEN pi.rtl_pkt_flag = 1 THEN 'SEZ'
-                       WHEN ph.ord_type IN ('I', 'A', 'T', 'UA', 'UI', 'JA', 'JI', 'O') THEN 'INT' END
+                       WHEN pi.rtl_pkt_flag = 1 THEN 'DOO SEZ'
+                       WHEN ph.ord_type IN ('I', 'A', 'T', 'UA', 'UI', 'JA', 'JI', 'O') THEN 'DOO INT' END
                      ELSE a.name END dep,
                  ph.pkt_ctrl_nbr zo,
                  ph.vendor_nbr,
