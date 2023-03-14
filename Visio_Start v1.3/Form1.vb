@@ -12,7 +12,7 @@
         Me.HorizontalScroll.Maximum = 0
         Me.AutoScroll = True
         initialize_connection()
-        'обновить_все()
+        обновить_все()
     End Sub
 
     Private Sub initialize_connection()
@@ -261,18 +261,18 @@
     Public Sub обновить_все()
         Form1.ActiveForm.Refresh()
         Form1.ActiveForm.Text = "ОНОВЛЯЮ ДАНІ"
-        'refresh_Неупакованные_лотки()
-        'refresh_Зона_отбора_APL()
+        refresh_Неупакованные_лотки()
+        refresh_Зона_отбора_APL()
         refresh_Зона_отбора_CON()
-        'refresh_Зона_отбора_NKZ_TRZ()
-        'refresh_Зона_отбора_IVS()
-        'refresh_Зона_отбора_IV()
-        'refresh_Пополнение_под_ЗО()
-        'refresh_Кол_во_лотков_на_станциях_мезонина()
-        'refresh_Задания_в_ПС()
-        'refresh_Дистро()
-        'refresh_Button_Незапущені_ЗО()
-        'refresh_Відвантажено_за_сьогодні()
+        refresh_Зона_отбора_NKZ_TRZ()
+        refresh_Зона_отбора_IVS()
+        refresh_Зона_отбора_IV()
+        refresh_Пополнение_под_ЗО()
+        refresh_Кол_во_лотков_на_станциях_мезонина()
+        refresh_Задания_в_ПС()
+        refresh_Дистро()
+        refresh_Button_Незапущені_ЗО()
+        refresh_Відвантажено_за_сьогодні()
         Form1.ActiveForm.Text = "StartVisio | обновлено:" & Now
     End Sub
 
