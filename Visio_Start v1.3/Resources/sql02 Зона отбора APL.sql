@@ -2,29 +2,15 @@ SELECT SUM(bl) bl,
        SUM(zap) zap,
        dep
   FROM (SELECT DISTINCT th.task_id,
-                        CASE
-                          WHEN im.cd_master_id = '3001' AND im.sale_grp = 'TCK' THEN 'OXYGEN'
-                          WHEN im.cd_master_id = '3001' AND im.sale_grp IN ('TCS', 'TCSR') THEN 'USB'
-                          WHEN im.cd_master_id = '3001' THEN 'Л-Трейд'
-                          WHEN im.cd_master_id = '6003' THEN
-                           CASE
-                             WHEN im.sale_grp = 'P01' THEN 'LOR'
-                             WHEN im.sale_grp IS NULL AND substr(im.sku_desc, 1, 3) = 'LOR' THEN 'LOR'
-                             WHEN ph.shipto_addr_1 NOT LIKE '%нтернет%' AND ph.shipto_addr_1 NOT LIKE '%ахтерск%' AND
-                                  ph.shipto_addr_1 NOT LIKE '%АХТЕРСК%' AND phi.total_nbr_of_units > 4 THEN 'PROT'
-                             ELSE 'PROT_IM'
-                           END
-                          WHEN im.cd_master_id = '2001' THEN
-                           CASE
-                             WHEN im.size_desc = '1214119' AND ph.shipto_name LIKE '%Плато%' THEN 'PLATO'
-                             WHEN im.size_desc = 'UPAK-DOO' THEN a.name
-                             WHEN ph.vendor_nbr LIKE '%W60%' AND substr(ph.shipto_name, 1, 2) IN ('П ', 'Н ') THEN 'DD_DROP'
-                             WHEN ph.vendor_nbr LIKE '%W63%' AND substr(ph.shipto_name, 1, 2) IN ('П ', 'Н ') THEN 'DD_DROP'
-                             WHEN substr(ph.shipto_name, 1, 6) = 'IN IT ' OR ph.pkt_type = 'D' OR ph.ord_type IN ('O', 'I') THEN 'INET'
-                             ELSE a.name
-                           END
-                           ELSE a.name
-                        END dep,
+                                CASE
+                                   WHEN ph.cd_master_id = '2001' THEN
+                                    CASE
+                                      WHEN phi.rtl_pkt_flag = '1' THEN 'DOO SEZ'
+                                      WHEN ph.ord_type IN ('I', 'A', 'T', 'UA', 'UI', 'JA', 'JI', 'O') THEN 'DOO INT'
+                                       ELSE a.name
+                                    END
+                                   ELSE a.name
+                                 END                         AS dep,
                         CASE
                           WHEN th.stat_code = '5' THEN 1
                           ELSE 0

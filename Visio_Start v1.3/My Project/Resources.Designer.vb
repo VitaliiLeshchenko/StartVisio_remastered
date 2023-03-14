@@ -61,11 +61,11 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Provider=OraOLEDB.Oracle.1;User ID=gnatyk;Password=gnatyk;Data Source=WMOS_PROD;Persist Security Info=False.
+        '''  Looks up a localized string similar to Provider=OraOLEDB.Oracle.1;User ID=ReportA21;Password=ReportA21;Data Source=WMOS_PROD;Persist Security Info=False.
         '''</summary>
-        Friend ReadOnly Property db_property() As String
+        Friend ReadOnly Property db_path() As String
             Get
-                Return ResourceManager.GetString("db_property", resourceCulture)
+                Return ResourceManager.GetString("db_path", resourceCulture)
             End Get
         End Property
         
@@ -365,19 +365,43 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to SELECT dep,
-        '''       COUNT(zo) zo
-        '''  FROM (SELECT DISTINCT                                 CASE
-        '''                                  WHEN im.cd_master_id = &apos;3001&apos; AND im.sale_grp = &apos;TCK&apos; THEN &apos;OXYGEN&apos;
-        '''                                  WHEN im.cd_master_id = &apos;3001&apos; AND im.sale_grp IN (&apos;TCS&apos;, &apos;TCSR&apos;) THEN &apos;USB&apos;
-        '''                                  WHEN im.cd_master_id = &apos;3001&apos; THEN &apos;Л-Трейд&apos;
-        '''                                  WHEN im.cd_master_id = &apos;6003&apos; THEN
-        '''                                   CASE
-        '''            [rest of string was truncated]&quot;;.
+        '''  Looks up a localized string similar to   SELECT dep,
+        '''   COUNT (zo) zo
+        '''    FROM (SELECT DISTINCT
+        '''                 CASE
+        '''                   WHEN im.cd_master_id = &apos;2001&apos; THEN
+        '''                     CASE
+        '''                       WHEN pi.rtl_pkt_flag = 1 THEN &apos;DOO SEZ&apos;
+        '''                       WHEN ph.ord_type IN (&apos;I&apos;, &apos;A&apos;, &apos;T&apos;, &apos;UA&apos;, &apos;UI&apos;, &apos;JA&apos;, &apos;JI&apos;, &apos;O&apos;) THEN &apos;DOO INT&apos; END
+        '''                     ELSE a.name END dep,
+        '''                 ph.pkt_ctrl_nbr zo,
+        '''                 ph.vendor_nbr,
+        '''                 ph.shipto_name
+        '''            FROM pkt_hdr_int [rest of string was truncated]&quot;;.
         '''</summary>
         Friend ReadOnly Property sql14_незапущенные_ЗО() As String
             Get
                 Return ResourceManager.GetString("sql14_незапущенные_ЗО", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to SELECT pkt.departament                         AS departament,
+        '''       COUNT(DISTINCT pkt.pkt_ctrl_nbr)        AS zo_qty,
+        '''       COUNT(*)                                AS row_qty,
+        '''       ROUND(SUM(pkt.row_volume) / 1000000, 2) AS volume_m3
+        '''  FROM (
+        '''SELECT CASE
+        '''         WHEN ph.cd_master_id = &apos;2001&apos; THEN
+        '''          CASE
+        '''            WHEN pi.rtl_pkt_flag = &apos;1&apos; THEN &apos;DOO SEZ&apos;
+        '''            WHEN ph.ord_type IN (&apos;I&apos;, &apos;A&apos;, &apos;T&apos;, &apos;UA&apos;, &apos;UI&apos;, &apos;JA&apos;, &apos;JI&apos;, &apos;O&apos;) THEN &apos;DOO INT&apos;
+        '''             ELSE a.name
+        '''           [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property sql15_відвантажено_за_сьогодні() As String
+            Get
+                Return ResourceManager.GetString("sql15_відвантажено_за_сьогодні", resourceCulture)
             End Get
         End Property
     End Module
