@@ -262,8 +262,8 @@
         Form1.ActiveForm.Refresh()
         Form1.ActiveForm.Text = "ОНОВЛЯЮ ДАНІ"
         'refresh_Неупакованные_лотки()
-        refresh_Зона_отбора_APL()
-        'refresh_Зона_отбора_CON()
+        'refresh_Зона_отбора_APL()
+        refresh_Зона_отбора_CON()
         'refresh_Зона_отбора_NKZ_TRZ()
         'refresh_Зона_отбора_IVS()
         'refresh_Зона_отбора_IV()
