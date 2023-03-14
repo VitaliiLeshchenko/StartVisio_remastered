@@ -12,14 +12,15 @@
         Me.HorizontalScroll.Maximum = 0
         Me.AutoScroll = True
         initialize_connection()
-        'обновить_все()
+        обновить_все()
     End Sub
 
     Private Sub initialize_connection()
         oraconn = CreateObject("ADODB.Connection")
         orarec = CreateObject("ADODB.Recordset")
-        oraconn.Open(My.Resources.db_property)
+        oraconn.Open(My.Resources.db_path)
     End Sub
+
 
     Private Sub refresh_Неупакованные_лотки()
         DataGridView1.Rows.Clear()
@@ -208,7 +209,6 @@
         '**********************************************************************
     End Sub
     Private Sub refresh_Дистро()
-        'Дистро **************************************************
         DataGridView9.Rows.Clear()
         orarec.Open(My.Resources.sql11_дистро, oraconn)
         ind = 0
@@ -226,9 +226,7 @@
         Loop
         If d <> 0 Or e <> 0 Then DataGridView9.Rows.Add(d, e, "Всего") : DataGridView9.Rows(ind).DefaultCellStyle.BackColor = Color.Cyan
         Me.DataGridView9.Refresh()
-        DataGridView9.AllowUserToAddRows = False
         orarec.Close()
-        '**********************************************************************
     End Sub
     Private Sub refresh_Button_Незапущені_ЗО()
         DGV_Незапущені_ЗО.Rows.Clear()
@@ -239,23 +237,42 @@
         Loop
         orarec.Close()
     End Sub
+    Private Sub refresh_Відвантажено_за_сьогодні()
+        DGV_shipped_today.Rows.Clear()
+        orarec.Open(My.Resources.sql15_відвантажено_за_сьогодні, oraconn)
+        Do Until orarec.EOF
+            DGV_shipped_today.Rows.Add(orarec.Fields("departament").Value,
+                                                  orarec.Fields(1).value,
+                                                  orarec.Fields(2).value,
+                                                  orarec.Fields(3).value)
+            orarec.MoveNext()
+        Loop
+        orarec.Close()
+    End Sub
+
 
     Private Sub Button_Незапущені_ЗО_Click(sender As Object, e As EventArgs) Handles Button_Незапущені_ЗО.Click
         refresh_Button_Незапущені_ЗО()
     End Sub
+    Private Sub Button_Відвантажено_за_сьогодні_Click(sender As Object, e As EventArgs) Handles Button_Відвантажено_за_сьогодні.Click
+        refresh_Відвантажено_за_сьогодні()
+    End Sub
 
     Public Sub обновить_все()
-        'refresh_Неупакованные_лотки()
-        'refresh_Зона_отбора_APL()
-        'refresh_Зона_отбора_CON()
-        'refresh_Зона_отбора_NKZ_TRZ()
-        'refresh_Зона_отбора_IVS()
-        'refresh_Зона_отбора_IV()
-        'refresh_Пополнение_под_ЗО()
+        Form1.ActiveForm.Refresh()
+        Form1.ActiveForm.Text = "ОНОВЛЯЮ ДАНІ"
+        refresh_Неупакованные_лотки()
+        refresh_Зона_отбора_APL()
+        refresh_Зона_отбора_CON()
+        refresh_Зона_отбора_NKZ_TRZ()
+        refresh_Зона_отбора_IVS()
+        refresh_Зона_отбора_IV()
+        refresh_Пополнение_под_ЗО()
         refresh_Кол_во_лотков_на_станциях_мезонина()
-        'refresh_Задания_в_ПС()
-        'refresh_Дистро()
+        refresh_Задания_в_ПС()
+        refresh_Дистро()
         refresh_Button_Незапущені_ЗО()
+        refresh_Відвантажено_за_сьогодні()
         Form1.ActiveForm.Text = "StartVisio | обновлено:" & Now
     End Sub
 

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Форма переопределяет dispose для очистки списка компонентов.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'Примечание: следующая процедура является обязательной для конструктора форм Windows Forms
     'Для ее изменения используйте конструктор форм Windows Form.  
     'Не изменяйте ее в редакторе исходного кода.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -96,13 +96,13 @@ Partial Class Form1
         Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
@@ -187,11 +187,12 @@ Partial Class Form1
         Me.GroupBox11 = New System.Windows.Forms.GroupBox()
         Me.TextBox36 = New System.Windows.Forms.TextBox()
         Me.TextBox35 = New System.Windows.Forms.TextBox()
-        Me.GroupBox12 = New System.Windows.Forms.GroupBox()
-        Me.TextBox37 = New System.Windows.Forms.TextBox()
-        Me.TextBox38 = New System.Windows.Forms.TextBox()
-        Me.DataGridView10 = New System.Windows.Forms.DataGridView()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button_Відвантажено_за_сьогодні = New System.Windows.Forms.Button()
+        Me.DGV_shipped_today = New System.Windows.Forms.DataGridView()
+        Me.departament = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.zo_qty = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.row_qty = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.volume_m3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -214,8 +215,7 @@ Partial Class Form1
         Me.GroupBox6.SuspendLayout()
         CType(Me.DGV_Незапущені_ЗО, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox11.SuspendLayout()
-        Me.GroupBox12.SuspendLayout()
-        CType(Me.DataGridView10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV_shipped_today, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button_Неупакованные_лотки
@@ -462,51 +462,15 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.DarkGray
+        Me.GroupBox1.Controls.Add(Me.DataGridView2)
         Me.GroupBox1.Controls.Add(Me.TextBox8)
         Me.GroupBox1.Controls.Add(Me.TextBox9)
         Me.GroupBox1.Controls.Add(Me.TextBox10)
-        Me.GroupBox1.Controls.Add(Me.DataGridView2)
         Me.GroupBox1.Location = New System.Drawing.Point(395, 26)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(180, 218)
         Me.GroupBox1.TabIndex = 110
         Me.GroupBox1.TabStop = False
-        '
-        'TextBox8
-        '
-        Me.TextBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(98, 10)
-        Me.TextBox8.Multiline = True
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(68, 20)
-        Me.TextBox8.TabIndex = 12
-        Me.TextBox8.Text = "Департ."
-        Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'TextBox9
-        '
-        Me.TextBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.TextBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(53, 10)
-        Me.TextBox9.Multiline = True
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(43, 20)
-        Me.TextBox9.TabIndex = 11
-        Me.TextBox9.Text = "Выпущ."
-        Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'TextBox10
-        '
-        Me.TextBox10.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.TextBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(6, 10)
-        Me.TextBox10.Multiline = True
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(45, 20)
-        Me.TextBox10.TabIndex = 10
-        Me.TextBox10.Text = "Заблок."
-        Me.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'DataGridView2
         '
@@ -558,6 +522,42 @@ Partial Class Form1
         Me.DataGridViewTextBoxColumn3.HeaderText = "Общее кол-во"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         Me.DataGridViewTextBoxColumn3.Width = 70
+        '
+        'TextBox8
+        '
+        Me.TextBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox8.Location = New System.Drawing.Point(98, 10)
+        Me.TextBox8.Multiline = True
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(68, 20)
+        Me.TextBox8.TabIndex = 12
+        Me.TextBox8.Text = "Департ."
+        Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'TextBox9
+        '
+        Me.TextBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.TextBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox9.Location = New System.Drawing.Point(53, 10)
+        Me.TextBox9.Multiline = True
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(43, 20)
+        Me.TextBox9.TabIndex = 11
+        Me.TextBox9.Text = "Выпущ."
+        Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'TextBox10
+        '
+        Me.TextBox10.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.TextBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox10.Location = New System.Drawing.Point(6, 10)
+        Me.TextBox10.Multiline = True
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(45, 20)
+        Me.TextBox10.TabIndex = 10
+        Me.TextBox10.Text = "Заблок."
+        Me.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Button5
         '
@@ -1023,7 +1023,7 @@ Partial Class Form1
         Me.DataGridView8.Name = "DataGridView8"
         Me.DataGridView8.RowHeadersVisible = False
         Me.DataGridView8.RowTemplate.Height = 21
-        Me.DataGridView8.Size = New System.Drawing.Size(368, 363)
+        Me.DataGridView8.Size = New System.Drawing.Size(370, 363)
         Me.DataGridView8.TabIndex = 0
         '
         'DataGridViewTextBoxColumn21
@@ -1205,10 +1205,10 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.StartVisio.My.Resources.Resources.LogoLittle
-        Me.PictureBox1.Location = New System.Drawing.Point(950, 663)
+        Me.PictureBox1.Location = New System.Drawing.Point(950, 716)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(300, 110)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox1.Size = New System.Drawing.Size(285, 70)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 125
         Me.PictureBox1.TabStop = False
         '
@@ -1274,9 +1274,9 @@ Partial Class Form1
         'Button_refresh_all
         '
         Me.Button_refresh_all.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button_refresh_all.Location = New System.Drawing.Point(950, 612)
+        Me.Button_refresh_all.Location = New System.Drawing.Point(950, 679)
         Me.Button_refresh_all.Name = "Button_refresh_all"
-        Me.Button_refresh_all.Size = New System.Drawing.Size(300, 45)
+        Me.Button_refresh_all.Size = New System.Drawing.Size(285, 31)
         Me.Button_refresh_all.TabIndex = 126
         Me.Button_refresh_all.Text = "Оновити дані"
         Me.Button_refresh_all.UseVisualStyleBackColor = True
@@ -1530,7 +1530,7 @@ Partial Class Form1
         '
         Me.Button_Незапущені_ЗО.BackColor = System.Drawing.Color.Yellow
         Me.Button_Незапущені_ЗО.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button_Незапущені_ЗО.Location = New System.Drawing.Point(950, 2)
+        Me.Button_Незапущені_ЗО.Location = New System.Drawing.Point(951, 2)
         Me.Button_Незапущені_ЗО.Name = "Button_Незапущені_ЗО"
         Me.Button_Незапущені_ЗО.Size = New System.Drawing.Size(193, 34)
         Me.Button_Незапущені_ЗО.TabIndex = 128
@@ -1543,7 +1543,7 @@ Partial Class Form1
         Me.GroupBox11.Controls.Add(Me.TextBox36)
         Me.GroupBox11.Controls.Add(Me.TextBox35)
         Me.GroupBox11.Controls.Add(Me.DGV_Незапущені_ЗО)
-        Me.GroupBox11.Location = New System.Drawing.Point(950, 26)
+        Me.GroupBox11.Location = New System.Drawing.Point(951, 26)
         Me.GroupBox11.Name = "GroupBox11"
         Me.GroupBox11.Size = New System.Drawing.Size(193, 264)
         Me.GroupBox11.TabIndex = 129
@@ -1573,45 +1573,22 @@ Partial Class Form1
         Me.TextBox35.Text = "Департамент"
         Me.TextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'GroupBox12
+        'Button_Відвантажено_за_сьогодні
         '
-        Me.GroupBox12.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.GroupBox12.Controls.Add(Me.TextBox37)
-        Me.GroupBox12.Controls.Add(Me.TextBox38)
-        Me.GroupBox12.Controls.Add(Me.DataGridView10)
-        Me.GroupBox12.Location = New System.Drawing.Point(950, 327)
-        Me.GroupBox12.Name = "GroupBox12"
-        Me.GroupBox12.Size = New System.Drawing.Size(193, 264)
-        Me.GroupBox12.TabIndex = 131
-        Me.GroupBox12.TabStop = False
+        Me.Button_Відвантажено_за_сьогодні.BackColor = System.Drawing.Color.Yellow
+        Me.Button_Відвантажено_за_сьогодні.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Button_Відвантажено_за_сьогодні.Location = New System.Drawing.Point(951, 294)
+        Me.Button_Відвантажено_за_сьогодні.Name = "Button_Відвантажено_за_сьогодні"
+        Me.Button_Відвантажено_за_сьогодні.Size = New System.Drawing.Size(290, 34)
+        Me.Button_Відвантажено_за_сьогодні.TabIndex = 130
+        Me.Button_Відвантажено_за_сьогодні.Text = "Відвантажено за сьогодні"
+        Me.Button_Відвантажено_за_сьогодні.UseVisualStyleBackColor = False
         '
-        'TextBox37
+        'DGV_shipped_today
         '
-        Me.TextBox37.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.TextBox37.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox37.Location = New System.Drawing.Point(126, 10)
-        Me.TextBox37.Multiline = True
-        Me.TextBox37.Name = "TextBox37"
-        Me.TextBox37.Size = New System.Drawing.Size(61, 20)
-        Me.TextBox37.TabIndex = 14
-        Me.TextBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'TextBox38
-        '
-        Me.TextBox38.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.TextBox38.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox38.Location = New System.Drawing.Point(6, 10)
-        Me.TextBox38.Multiline = True
-        Me.TextBox38.Name = "TextBox38"
-        Me.TextBox38.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox38.TabIndex = 13
-        Me.TextBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'DataGridView10
-        '
-        Me.DataGridView10.AllowUserToAddRows = False
-        Me.DataGridView10.AllowUserToDeleteRows = False
-        Me.DataGridView10.AllowUserToResizeRows = False
+        Me.DGV_shipped_today.AllowUserToAddRows = False
+        Me.DGV_shipped_today.AllowUserToDeleteRows = False
+        Me.DGV_shipped_today.AllowUserToResizeRows = False
         DataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle50.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle50.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
@@ -1619,8 +1596,8 @@ Partial Class Form1
         DataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView10.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle50
-        Me.DataGridView10.ColumnHeadersVisible = False
+        Me.DGV_shipped_today.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle50
+        Me.DGV_shipped_today.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.departament, Me.zo_qty, Me.row_qty, Me.volume_m3})
         DataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle51.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle51.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
@@ -1628,43 +1605,56 @@ Partial Class Form1
         DataGridViewCellStyle51.SelectionBackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle51.SelectionForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView10.DefaultCellStyle = DataGridViewCellStyle51
-        Me.DataGridView10.Location = New System.Drawing.Point(6, 34)
-        Me.DataGridView10.Name = "DataGridView10"
+        Me.DGV_shipped_today.DefaultCellStyle = DataGridViewCellStyle51
+        Me.DGV_shipped_today.Location = New System.Drawing.Point(952, 327)
+        Me.DGV_shipped_today.Name = "DGV_shipped_today"
         DataGridViewCellStyle52.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle52.ForeColor = System.Drawing.SystemColors.WindowText
         DataGridViewCellStyle52.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle52.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView10.RowHeadersDefaultCellStyle = DataGridViewCellStyle52
-        Me.DataGridView10.RowHeadersVisible = False
+        Me.DGV_shipped_today.RowHeadersDefaultCellStyle = DataGridViewCellStyle52
+        Me.DGV_shipped_today.RowHeadersVisible = False
         DataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle53.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.DataGridView10.RowsDefaultCellStyle = DataGridViewCellStyle53
-        Me.DataGridView10.RowTemplate.Height = 21
-        Me.DataGridView10.Size = New System.Drawing.Size(180, 218)
-        Me.DataGridView10.TabIndex = 12
+        Me.DGV_shipped_today.RowsDefaultCellStyle = DataGridViewCellStyle53
+        Me.DGV_shipped_today.RowTemplate.Height = 21
+        Me.DGV_shipped_today.Size = New System.Drawing.Size(288, 342)
+        Me.DGV_shipped_today.TabIndex = 12
         '
-        'Button1
+        'departament
         '
-        Me.Button1.BackColor = System.Drawing.Color.Yellow
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Button1.Location = New System.Drawing.Point(950, 299)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(193, 34)
-        Me.Button1.TabIndex = 130
-        Me.Button1.Text = "Відвантажено за сьогодні"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.departament.HeaderText = "departament"
+        Me.departament.Name = "departament"
+        Me.departament.Width = 119
+        '
+        'zo_qty
+        '
+        Me.zo_qty.HeaderText = "zo_qty"
+        Me.zo_qty.Name = "zo_qty"
+        Me.zo_qty.Width = 50
+        '
+        'row_qty
+        '
+        Me.row_qty.HeaderText = "row_qty"
+        Me.row_qty.Name = "row_qty"
+        Me.row_qty.Width = 50
+        '
+        'volume_m3
+        '
+        Me.volume_m3.HeaderText = "volume_m3"
+        Me.volume_m3.Name = "volume_m3"
+        Me.volume_m3.Width = 49
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1265, 796)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(1452, 796)
+        Me.Controls.Add(Me.DGV_shipped_today)
+        Me.Controls.Add(Me.Button_Відвантажено_за_сьогодні)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button_Незапущені_ЗО)
-        Me.Controls.Add(Me.GroupBox12)
         Me.Controls.Add(Me.GroupBox11)
         Me.Controls.Add(Me.Button_refresh_all)
         Me.Controls.Add(Me.PictureBox1)
@@ -1722,11 +1712,8 @@ Partial Class Form1
         CType(Me.DGV_Незапущені_ЗО, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox11.ResumeLayout(False)
         Me.GroupBox11.PerformLayout()
-        Me.GroupBox12.ResumeLayout(False)
-        Me.GroupBox12.PerformLayout()
-        CType(Me.DataGridView10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_shipped_today, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button_Неупакованные_лотки As System.Windows.Forms.Button
@@ -1838,12 +1825,13 @@ Partial Class Form1
     Friend WithEvents TextBox36 As TextBox
     Friend WithEvents DataGridViewTextBoxColumn32 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn33 As DataGridViewTextBoxColumn
-    Friend WithEvents GroupBox12 As GroupBox
-    Friend WithEvents TextBox37 As TextBox
-    Friend WithEvents TextBox38 As TextBox
-    Friend WithEvents DataGridView10 As DataGridView
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Button_Відвантажено_за_сьогодні As Button
     Friend WithEvents DataGridViewTextBoxColumn18 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn19 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_shipped_today As DataGridView
+    Friend WithEvents departament As DataGridViewTextBoxColumn
+    Friend WithEvents zo_qty As DataGridViewTextBoxColumn
+    Friend WithEvents row_qty As DataGridViewTextBoxColumn
+    Friend WithEvents volume_m3 As DataGridViewTextBoxColumn
 End Class
